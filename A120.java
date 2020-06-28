@@ -24,7 +24,7 @@ public class A120 {
         System.out.println("=================");
        
        
-        System.out.println(mapa.remove("0"));
+        System.out.println(mapa.remove(0));
         System.out.println("-------------------");
        
         System.out.println(mapa);

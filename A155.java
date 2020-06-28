@@ -10,7 +10,7 @@ import java.time.temporal.TemporalAdjusters;
 public class A155 {
     public static void main(String[] args) {
         int[] a=new int[6];
-        a=new int[3];
+        a[3]=1;
         LocalDateTime dt=LocalDateTime.of(2020, 11, 15, 12, 32, 34);
         LocalDateTime dt2=dt.withHour(15).withYear(1999);
         // System.out.println(dt.getDayOfYear());
@@ -31,7 +31,7 @@ public class A155 {
         LocalDate day1=LocalDate.of(2014,5,4);
         LocalDate day2=LocalDate.of(2012,4,4);
         Period p1=Period.between(day1,day2);
-        Period p2=Period.between(dt.toLocalDate(),dt2.toLocalDate());
+       // Period p2=Period.between(dt.toLocalDate(),dt2.toLocalDate());
         System.out.println(p1);
     }
 }

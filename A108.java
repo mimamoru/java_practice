@@ -10,10 +10,11 @@ public class A108 {
         lia.add(4);
         lia.add(8);
         lia.add(2);
-        var lib=new ArrayList<>();
+        var lib=new ArrayList<Integer>();
         lib.add(1);
         lib.add(6);
         lib.add(9);
+        lib.add(6);
         var lic=new ArrayList<>();     
         lic.add(0);
         lic.add(4);
@@ -28,6 +29,8 @@ public class A108 {
         for(int aa:lia){
         System.out.println(aa);}
         System.out.println("=================");
+        lib.sort((o1,o2)-> o2-o1);
+        System.out.println(lib);
        
 }
 }

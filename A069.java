@@ -53,8 +53,10 @@ class A069_sub extends A069{
     }
 public static void main(String[] args) {
     A069_sub a=new A069_sub();
+    System.out.println(a);
     System.out.println("=================");
     A069_sub b=new A069_sub(3);
+    System.out.println(b.toString());
 }
 
 }
