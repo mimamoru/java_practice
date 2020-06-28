@@ -15,7 +15,7 @@ public class A108 {
         lib.add(6);
         lib.add(9);
         lib.add(6);
-        var lic=new ArrayList<>();     
+        var lic=new ArrayList<Integer>();     
         lic.add(0);
         lic.add(4);
         lic.add(8);
@@ -31,6 +31,8 @@ public class A108 {
         System.out.println("=================");
         lib.sort((o1,o2)-> o2-o1);
         System.out.println(lib);
-       
+        Integer[] i=new Integer[lic.size()];
+		lic.toArray(i);
+       //[] ob=lic.toArray();
 }
 }
