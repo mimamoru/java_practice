@@ -18,6 +18,8 @@ public class Sample1 {
 		 System.out.printf("%s\n","%");
 
 	 }
+
 	 System.out.printf("aaaaaaaaaa");
+	 System.out.printf("bbb");
 	 stdIn.close();
  }}
