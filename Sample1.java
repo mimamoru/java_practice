@@ -19,5 +19,6 @@ public class Sample1 {
 
 	 }
 	 System.out.printf("aaa");
+	 System.out.printf("bbb");
 	 stdIn.close();
  }}
