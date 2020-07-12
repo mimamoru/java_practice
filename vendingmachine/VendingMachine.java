@@ -58,7 +58,7 @@ public interface VendingMachine {
    };
 
    private static VendingMachine getVending(Product p,int money){
-    if(p.getTime()==0){
+    if(p.getTime()<0){
         return new DrinkMachine(p,money);
     }
       return  new FoodMachine(p,money);

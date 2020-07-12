@@ -47,7 +47,7 @@ public class MachineTest {
         try {
             List<String> line = Files.readAllLines(path,charset);
             int idx=0;
-            Pattern pat = Pattern.compile(".+,[0-9]+,-[0-9]+");
+            Pattern pat = Pattern.compile(".+,[0-9]+,[0-9]+");
            
             for (String ss : line) {
                 if(!pat.matcher(ss).matches()){
