@@ -16,8 +16,7 @@ public class Child {
         this.ten_sales=ten_sales;
     }
 
-    private ArrayList<Product> getProducts(){
-        
+    private ArrayList<Product> getProducts(){      
         return new Info().Select3(this.id);
     }
 
@@ -28,24 +27,19 @@ public class Child {
 // 　　　　　　　　　　　　　飲料　　　　|　　　60,000
 // --------------------------------------------------------------------------------------
 // ○○店　|…
-    System.out.printf("%-9s|%-12s|%-9s|%-9s","店舗名　","月間合計売上(円)","取扱商品種類","種類別在庫量(個)");
-    System.out.println("============================================");
-
-    for(Child c:childlen){
-        boolean flg=true;
-        for(Product p:c.getProducts()){
-        if(flg){
-        System.out.printf("%-9s|%,12d|%-9s|%,9d",c.name,c.ten_sales,p.getName(),p.getPro_inv());
-        }else{
-        System.out.printf("%-9s|%-12s|%-9s|%,9d","","",p.getName(),p.getPro_inv());
+        System.out.printf("%-9s|%-12s|%-9s|%-9s","店舗名　","月間合計売上(円)","取扱商品種類","種類別在庫量(個)");
+        System.out.println("============================================");
+        for(Child c:childlen){
+            boolean flg=true;
+            for(Product p:c.getProducts()){
+                if(flg){
+                    System.out.printf("%-9s|%,12d|%-9s|%,9d",c.name,c.ten_sales,p.getName(),p.getPro_inv());
+                }else{
+                    System.out.printf("%-9s|%-12s|%-9s|%,9d","","",p.getName(),p.getPro_inv());
+                }
+                flg=false;
+                }   
+            System.out.println("--------------------------------------------");
+            }
         }
-        flg=false;
-    }
-    
-        System.out.println("--------------------------------------------");
-
-        //this.getProducts();
-        //System.out.println(this.name);
-    }
-    }
 }

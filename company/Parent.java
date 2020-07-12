@@ -32,8 +32,7 @@ public class Parent {
             System.out.printf("%-9s|%,5d|%,12d",p.name,p.count,p.com_sales);
             System.out.println("--------------------------------------------");
              // p.getChildren();
-        }
-      
+        }     
     }
 
 }
